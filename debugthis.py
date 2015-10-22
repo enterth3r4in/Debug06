@@ -1,4 +1,7 @@
-﻿year = 0
+﻿# This program allows a user to enter a student's 
+# year in school (1 through 4)
+# and number of cans collected
+year = 0
 cans = 0
 SIZE = 4
 QUIT = 9
@@ -6,12 +9,13 @@ collected = [0, 0, 0, 0]
 HEADER1 = "Can Recycling Report"
 HEADER2 = "Year   Cans Collected"
 
-def isInt(value):
-    try:
-        int(value)
-        return True
-    except:
-        return False
+#Simple value error checking method. Just need to implement.
+#def isInt(value):
+#    try:
+#        int(value)
+#        return True
+#    except:
+#        return False
 
 year = input("Enter year of student (1-4) or 'QUIT' to quit: ")
 while not(str(year) == "QUIT"):
