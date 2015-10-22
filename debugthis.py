@@ -14,15 +14,10 @@ def isInt(value):
         return False
 
 year = input("Enter year of student (1-4) or 'QUIT' to quit: ")
-if(isInt(year)):
-    while not(str(year) == "QUIT"):
-        cans = int(input("Enter number of cans collected: "))
-        collected[int(year) - 1] += cans
-        year = input("Enter year of student (1-4) or 'QUIT' to quit: ")
-        if(isInt(year)):
-            continue
-        else:
-            print("Must enter integer value")
+while not(str(year) == "QUIT"):
+    cans = int(input("Enter number of cans collected: "))
+    collected[int(year) - 1] += cans
+    year = input("Enter year of student (1-4) or 'QUIT' to quit: ")
 
 print()
 print(HEADER1)
